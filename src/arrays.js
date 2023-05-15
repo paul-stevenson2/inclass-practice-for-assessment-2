@@ -17,3 +17,18 @@ function duplicateArray(arr) {
     }
     return newArray
 }
+
+//NOTE - Develop a function that counts number of zeros in a 2D array.
+
+function twoArrays(arr) {
+    let count = 0
+
+    for(let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] === 0) {
+                count++
+            }
+        }
+    }
+    return count    
+}

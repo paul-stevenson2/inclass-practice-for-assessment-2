@@ -32,3 +32,19 @@ function twoArrays(arr) {
     }
     return count    
 }
+
+//TODO - Write a function that returns the largest even number in an array. if no even number print "No even Number"
+//NOTE - eventLargestNumber([1,3,5,7,9]) if no even number print "No even Number"
+
+function eventLargestNumber(arr) {
+    let benchmark = -1
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            if (arr[i] > benchmark) {
+                benchmark = arr[i]
+            }
+        }
+    }
+    return benchmark
+}
